@@ -21,5 +21,9 @@ const express = require('express'),
             })
 
 
-            
-            app.post('/api/register', ctrl.register)
+
+            app.post('/auth/register', ctrl.register)
+            app.post('/auth/login',ctrl.login)
+            app.post('/auth/logout', ctrl.destroySession)
+
+            app.get('/api/current', ctrl.getUser)

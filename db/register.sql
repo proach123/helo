@@ -1,3 +1,3 @@
 insert into userz (username, password,  user_img)
-values (${username},${password},0,'https://img.icons8.com/dusk/64/000000/picture.png')
+values (${username},${password},'https://www.sparklabs.com/forum/styles/comboot/theme/images/default_avatar.jpg')
 returning id, username, user_img
